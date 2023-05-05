@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          이장한은 부자입니다.
         </a>
       </header>
     </div>

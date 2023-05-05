@@ -1,0 +1,13 @@
+#개발 환경을 위한 파일을 만들기 위해서는 dev를 써야 한다.
+
+FROM node:alpine
+
+WORKDIR /usr/src/app
+
+COPY package.json ./
+
+RUN npm install
+
+COPY ./ ./
+
+CMD ["npm","run","start"]
