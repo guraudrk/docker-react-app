@@ -1,0 +1,14 @@
+# .을 먼저 붙인다.
+
+
+sudo: required
+
+language: generic
+
+
+services:
+ - docker
+
+ before_install:
+ - echo "start creating an image with dockerfile"
+ - docker build -t lee1066515/docker-react-app -f Dockerfile.dev .
